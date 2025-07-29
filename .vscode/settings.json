@@ -26,5 +26,7 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
-  }
+  },
+  "cSpell.words": ["Aeropress", "Flexbox", "Petz"],
+  "liveServer.settings.port": 5501
 }
