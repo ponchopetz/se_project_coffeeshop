@@ -27,16 +27,16 @@
           />
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#recipes-section">Recipe</a>
+              <a class="nav__link" href="#recipes-id">Recipes</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Menu</a>
+              <a class="nav__link" href="#booking-id">Book a table</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Book a table</a>
+              <a class="nav__link" href="#menu-id">Menu</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Contacts</a>
+              <a class="nav__link" href="#contacts-id">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -69,7 +69,7 @@
       </header>
 
       <main class="content">
-        <section id="recipes-section" class="recipes">
+        <section id="recipes-id" class="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
@@ -85,7 +85,7 @@
                 allowfullscreen
                 class="recipes__iframe"
               ></iframe>
-              <div class="recipes__caption-wrapper">
+              <div class="recipes__video-caption-wrapper">
                 <p class="recipes__video-caption">Aeropress recipe</p>
                 <p class="recipes__video-caption">~5 min</p>
               </div>
@@ -99,16 +99,77 @@
                 allowfullscreen
                 class="recipes__iframe"
               ></iframe>
-              <div class="recipes__caption-wrapper">
+              <div class="recipes__video-caption-wrapper">
                 <p class="recipes__video-caption">French press recipe</p>
                 <p class="recipes__video-caption">~15 min</p>
               </div>
             </li>
           </ul>
         </section>
-        <section class="reservations"></section>
-        <section class="menu"></section>
-        <section class="about"></section>
+        <section id="booking-id" class="reservations">
+          <h2 class="reservation__title">Book a table</h2>
+          <form action="" class="form reservation__form">
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label">Name *</label>
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="customer-name"
+                required
+                placeholder="Name Surname"
+              />
+              <label for="guest-number" class="form__label"
+                >Number of guests *</label
+              >
+              <input
+                class="form__input"
+                type="number"
+                id="guest-number"
+                name="number-of-guests"
+                required
+                min="1"
+                max="8"
+                placeholder="1-8"
+              />
+              <label for="date-time" class="form__label">Date & Time *</label>
+              <input
+                type="datetime-local"
+                name="date-and-time"
+                id="date-time"
+                class="form__input"
+                required
+              />
+              <label for="email" class="form__label">Your email *</label>
+              <input
+                class="form__input"
+                type="email"
+                name="email-address"
+                id="email"
+                required
+                placeholder="email@email.com"
+              />
+            </fieldset>
+            <button class="form__button">Book a table</button>
+            <label
+              for="terms-check"
+              class="form__label form__label_type_checkbox"
+            >
+              I agree to the terms of use
+              <input
+                class="form__checkbox"
+                type="checkbox"
+                id="terms-check"
+                name="terms-of-use"
+                value="terms-agreed"
+                required
+              />
+              <span class="form__visible-checkbox"></span>
+            </label>
+          </form>
+        </section>
+        <section id="menu-id" class="menu"></section>
+        <section id="contacts-id" class="about"></section>
       </main>
       <footer class="footer"></footer>
     </div>

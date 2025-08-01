@@ -131,7 +131,7 @@
   border: none;
 }
 
-.recipes__caption-wrapper {
+.recipes__video-caption-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -142,4 +142,111 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+}
+
+.reservations {
+  background: #d9e7ff url(../images/background_reservation.svg) no-repeat center /
+    cover;
+  padding: 100px 0 120px;
+}
+
+.reservation__title {
+  text-align: center;
+  margin: 0;
+  color: #000;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.form {
+  max-width: 385px;
+}
+
+.reservation__form {
+  margin: 80px auto 0;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__label {
+  color: #000;
+  font-weight: 500;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0 32px;
+  box-sizing: border-box;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  color: #000;
+}
+
+.form__input::placeholder {
+  color: #838383;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  width: 100%;
+  padding: 20px 0 20px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  background-color: #1879dc;
+  transition: background-color 1s linear;
+  color: #fff;
+}
+
+.form__button:hover {
+  background-color: #3f96f3;
+}
+
+.form__checkbox {
+  /* Use the appearance property to remove default browser styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* For better hiding across all browsers, we'll also make it take up no space */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.form__visible-checkbox {
+  display: inline-block; /*to set width and height */
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #1878dc;
+}
+
+.form__checkbox:checked + .form__visible-checkbox {
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__label_type_checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 12px;
 }
