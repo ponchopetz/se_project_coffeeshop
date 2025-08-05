@@ -34,10 +34,10 @@
   font-weight: 500;
   border: none;
   width: 100%;
-  padding: 20px 0 20px;
+  padding: 20px 0;
   margin-bottom: 32px;
   border-radius: 4px;
-  background-color: #1879dc;
+  background-color: #1878dc;
   transition: background-color 0.5s linear;
   color: #fff;
 }
@@ -79,13 +79,11 @@
   border: 1.5px solid;
   border-radius: 2px;
   cursor: pointer;
-  background-color: #1878dc;
+  background-color: #fff;
 }
 
 .form__checkbox:checked + .form__visible-checkbox {
-  background-image: url(../images/check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #1878dc url(../images/check.svg) no-repeat center;
 }
 
 .form__checkbox:focus + .form__visible-checkbox {
